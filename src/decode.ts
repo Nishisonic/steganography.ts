@@ -15,12 +15,12 @@ export interface DecodeOption {
   height?: number;
 }
 
-export function decode(
+export async function decode(
   image: Readonly<HTMLImageElement | string>,
   options: Readonly<DecodeOption> = {}
 ) {
   // Handle image url
-  const _image = ((image, options) => {
+  const _image = await ((image, options) => {
     if (typeof image === "string") {
       return util.loadImg(image);
     }

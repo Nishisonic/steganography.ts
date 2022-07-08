@@ -11,13 +11,13 @@ export interface EncodeOption {
   height?: number;
 }
 
-export function encode(
+export async function encode(
   message: string,
   image: Readonly<HTMLImageElement | string>,
   options: Readonly<EncodeOption> = {}
 ) {
   // Handle image url
-  const _image = ((image, options) => {
+  const _image = await ((image, options) => {
     if (typeof image === "string") {
       return util.loadImg(image);
     }

@@ -61,10 +61,13 @@ function createArrayFromArgs(
   return ret;
 }
 
-function loadImg(url: string) {
-  let image = new Image();
-  image.src = url;
-  return image;
+async function loadImg(url: string): Promise<HTMLImageElement> {
+  return new Promise((resolve, reject) => {
+    let image = new Image();
+    image.src = url;
+    image.onload = () => resolve(image);
+    image.onerror = (e) => reject(e);
+  });
 }
 
 export default {
