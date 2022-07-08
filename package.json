@@ -1,10 +1,10 @@
 {
-  "name": "@nishikuma/steganography_ts",
+  "name": "ts-steganography",
   "description": "TypeScript version of steganography.js",
-  "homepage": "https://github.com/Nishisonic/steganography_ts#readme",
+  "homepage": "https://github.com/Nishisonic/ts-steganography#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nishisonic/steganography_ts"
+    "url": "https://github.com/Nishisonic/ts-steganography"
   },
   "version": "2.0.1",
   "license": "MIT",
