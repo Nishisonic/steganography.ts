@@ -1,5 +1,5 @@
 {
-  "name": "steganography_ts",
+  "name": "@nishikuma/steganography_ts",
   "description": "TypeScript version of steganography.js",
   "homepage": "https://github.com/Nishisonic/steganography_ts#readme",
   "repository": {
