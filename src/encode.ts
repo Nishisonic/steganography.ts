@@ -166,7 +166,7 @@ export async function encode(
     data[i] = 255;
   }
 
-  shadowCtx.putImageData({ ...imageData, data }, 0, 0);
+  shadowCtx.putImageData(new ImageData(data, imageData.width, imageData.height), 0, 0);
 
   return shadowCanvas.toDataURL();
 }
